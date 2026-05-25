@@ -82,7 +82,6 @@ Stats dashboard with a fictional sample Codeforces profile:
 - Python 3.11+
 - `g++` for compiling C++ solutions
 - Google Chrome or a Chromium-based browser if you want to use the included browser extension
-- Node.js only if you plan to rebuild the frontend assets
 
 ## Quick Start On Windows
 
@@ -201,9 +200,8 @@ cf-workbench/
 |  |- codeforces_api.py          # Official Codeforces API client
 |  `- web_ui.py                  # Rendered local browser UI
 |- browser-extension/            # Chrome extension for statement capture/prefill
-|- frontend/ide/                 # TypeScript Monaco integration source
 |- scripts/                      # Windows launch helpers
-|- templates/                    # C++ template examples
+|- src/cf_workbench/templates/    # Packaged default C++ starter template
 |- tests/                        # pytest suite
 `- workspace/                    # Local generated workspace, ignored by git
 ```

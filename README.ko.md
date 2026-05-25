@@ -83,7 +83,6 @@ flowchart TD
 - Python 3.11 이상
 - C++ 풀이 컴파일을 위한 `g++`
 - 포함된 브라우저 확장 프로그램을 사용할 경우 Google Chrome 또는 Chromium 기반 브라우저
-- frontend asset을 다시 빌드할 경우에만 Node.js 필요
 
 ## Windows 빠른 시작
 
@@ -200,9 +199,8 @@ cf-workbench/
 |  |- codeforces_api.py          # Codeforces 공식 API client
 |  `- web_ui.py                  # 로컬 브라우저 UI 렌더링
 |- browser-extension/            # statement capture/submit prefill Chrome 확장
-|- frontend/ide/                 # TypeScript Monaco integration source
 |- scripts/                      # Windows 실행 helper
-|- templates/                    # C++ 템플릿 예시
+|- src/cf_workbench/templates/    # 패키지에 포함된 기본 C++ 시작 템플릿
 |- tests/                        # pytest suite
 `- workspace/                    # 로컬 생성 작업공간, git 제외
 ```

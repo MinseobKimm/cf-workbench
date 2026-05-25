@@ -13,6 +13,14 @@ node_modules/
 # Personal local templates are not published.
 templates/
 
+# Development-only rebuild/sample files are kept local.
+examples/
+frontend/
+package.json
+package-lock.json
+tsconfig.json
+vite.config.ts
+
 .venv/
 venv/
 
