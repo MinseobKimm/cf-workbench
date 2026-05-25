@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "cf-workbench Statement Capture",
+  "version": "0.2.0",
+  "description": "Captures Codeforces statements and fills submit forms from local cf-workbench.",
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "http://localhost/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://codeforces.com/contest/*/problem/*",
+        "https://codeforces.com/contest/*/submit",
+        "https://codeforces.com/problemset/problem/*/*",
+        "https://codeforces.com/problemset/submit",
+        "https://codeforces.com/gym/*/problem/*",
+        "https://codeforces.com/gym/*/submit",
+        "https://codeforces.com/group/*/contest/*/problem/*",
+        "https://codeforces.com/group/*/contest/*/submit"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

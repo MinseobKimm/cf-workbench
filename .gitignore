@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+pytest-cache-files-*/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+dist/
+build/
+node_modules/
+
+.venv/
+venv/
+
+.env
+.env.*
+!.env.example
+*.log
+*.pid
+.cfw/
+
+# Imported practice workspaces and compiled binaries are local artifacts.
+workspace/
+**/build/
+*.exe
+*.out

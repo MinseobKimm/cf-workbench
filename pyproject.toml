@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cf-workbench"
+version = "0.1.0"
+description = "Local Codeforces practice workflow helper."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "cf-workbench contributors" }]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+exe = ["pyinstaller>=6"]
+
+[project.scripts]
+cfw = "cfw.cli:main"
+cf-workbench = "cf_workbench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src", "."]
+include = ["cf_workbench*", "cfw*"]
+
+[tool.setuptools.package-data]
+cf_workbench = ["templates/*.cpp", "static/ide/*", "static/ide/assets/*"]
+
+[tool.pytest.ini_options]
+addopts = "-p no:cacheprovider"
