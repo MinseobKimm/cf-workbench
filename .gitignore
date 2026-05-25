@@ -10,6 +10,9 @@ dist/
 build/
 node_modules/
 
+# Personal local templates are not published.
+templates/
+
 .venv/
 venv/
 
